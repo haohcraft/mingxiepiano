@@ -7,28 +7,23 @@ import CodePlugin from 'typography-plugin-code'
 const options = {
   googleFonts: [
     {
-      name: 'Montserrat',
-      styles: [
-        '700',
-      ],
-    },
-    {
-      name: 'Arvo',
+      name: 'Roboto',
       styles: [
         '400',
-        '400i',
+        '500',
         '700',
       ],
-    },
+    }
   ],
-  headerFontFamily: ['Montserrat', 'sans-serif'],
-  bodyFontFamily: ['Arvo', 'sans-serif'],
+  headerFontFamily: ['Roboto', 'sans-serif'],
+  bodyFontFamily: ['Roboto', 'sans-serif'],
   baseFontSize: '18px',
   baseLineHeight: 1.65,
+  includeNormalize: true,
   scale: 2.25,
   plugins: [
     new CodePlugin(),
-  ],
+  ]
 }
 
 const typography = new Typography(options)
