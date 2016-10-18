@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import { HamburgerMenuLink } from '../HamburgerMenu';
 import HideOnLandingPage from '../HideOnLandingPage';
-
+import './style.css';
 const HamburgerMenu = (props, { }) => {
   return (
     <nav className="hamburger-menu">

@@ -1,6 +1,7 @@
 import APP_CONFIG from './config/';
 import ExtendedDefinePlugin from 'extended-define-webpack-plugin';
-
+import cPostcss from './postcss';
+/*eslint-disable*/
 exports.modifyWebpackConfig = function(config, env) {
   const fileLoader = env !== 'develop' ? 'file-loader?name=/[hash].[ext]' : 'file-loader';
   const imageLoader = env !== 'develop' ? 'file-loader?name=/[name]-[hash].[ext]' : 'file-loader';
@@ -63,5 +64,20 @@ exports.modifyWebpackConfig = function(config, env) {
 
   config.plugin('webpack-extended-define', ExtendedDefinePlugin, [{APP_CONFIG}]);
 
+  config.merge({
+    postcss (wp) {
+      return [
+        cPostcss({
+          import: {
+            extensions: ['.css'],
+            addDependencyTo: wp
+          },
+          cssnext: { browsers: 'last 2 versions' }
+        })
+      ]
+    },
+  })
+
   return config;
 };
+/*eslint-enable*/
