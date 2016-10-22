@@ -9,9 +9,9 @@ const tml = (props) => (
         <TopBar />
         <Container
             style={{
-                maxWidth: 960,
+                maxWidth: '85.625em',
                 padding: `${rhythm(1)} ${rhythm(3 / 4)}`,
-                paddingTop: 0
+                paddingTop: 90
             }}
         >
             {props.children}

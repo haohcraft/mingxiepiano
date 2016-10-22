@@ -1,9 +1,9 @@
-import ReactDOM from 'react-dom/server'
-import React from 'react'
-import Typography from 'typography'
-import { GoogleFont } from 'react-typography'
-import CodePlugin from 'typography-plugin-code'
-
+import ReactDOM from 'react-dom/server';
+import React from 'react';
+import Typography from 'typography';
+import { GoogleFont } from 'react-typography';
+import CodePlugin from 'typography-plugin-code';
+/*eslint-disable*/
 const options = {
   googleFonts: [
     {
@@ -39,5 +39,6 @@ if (process.env.NODE_ENV !== 'production') {
     head.insertAdjacentHTML('beforeend', googleFonts)
   }
 }
+/*eslint-enable*/
+export default typography;
 
-export default typography

@@ -1,10 +1,29 @@
 .Hero {
-    &-img {}
+    display: flex;
+    &-img {
+        width: 50%;
+        margin-right: 5%;
+    }
     &-feature {
+        width: 45%;
+        padding: 50px;
+        background: $color-blue;    
         h5 {
             color: $color-gold;
+            text-transform: uppercase;
         }
-        &-quote {}
-        &-link {}
+        hr {
+            width: 80px;
+            border-bottom: 2px solid $color-gold;
+        }
+        &-quote {
+            padding: 30px 0px;
+            color: $color-white;
+        }
+        &-link {
+            cursor: pointer;
+            text-align: right;
+            transition: all 1s ease-in-out;
+        }
     }
 }
