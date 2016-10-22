@@ -1,0 +1,71 @@
+#react-mount {
+    min-width: 800px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+  line-height: 1;
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+strong {
+  font-weight: 500;
+}
+
+img,
+picture,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+p a,
+a,
+.text-link {
+  transition: $transition-default;
+  color: $color-inactive;
+  text-decoration: none;
+  &:hover {
+    color: $color-blue;
+  }
+
+  &:active {
+    color: $color-blue;
+  }
+}
+
+button,
+input,
+select,
+textarea {
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  max-width: 100%;
+  resize: none;
+}
+
+body #elevio-widget,
+body #intercom-container {
+  display: none !important;
+}

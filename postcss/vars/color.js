@@ -1,24 +1,23 @@
 const colors = {
-    // main
-    'color-main-blue': '#0070D3',
-    'color-main-blue--hover': '#338DDC',
-    'color-main-blue--active': '#0568BF',
-    'color-main-azure': '#49B9E8',
-    'color-main-purple': '#642ee1',
-    'color-main-yellow': '#FFCC01',
-    'color-main-yellow--hover': '#FFDC4D',
-    'color-main-yellow--active': '#F1C000',
-    'color-main-black': '#1D2228',
-    'color-main-graphite': '#4D5966',
-    'color-main-silver': '#757E88',
-    'color-main-gray': '#F0F2F3',
-    'color-main-red': '#F0423A',
-    'color-main-green': '#28B12B',
-
-    // body
-    'color-text-textline': '#5F6C7A'
+    // Colors
+    'color-white': '#FFFFFF',
+    'color-blue': '#2B3250',
+    'color-light-blue': '#4B6891',
+    'color-grey': '#585858',
+    'color-inactive': '#AFB7BB',
+    'color-light-grey': '#F2F2F2',
+    'color-mainLight': '#E09B8D',
+    'color-mainDark': '#D14A2F',
+    'color-light-red': '#E09B8D',
+    'color-lighter-red': '#F6E1DD',
+    'color-red': '#D14A2F',
+    'color-lighter-blue': '#B7C3D3',
+    'color-gold': '#FFD533',
+    'color-off-grey': '#333132',
+    'color-perfHover': '#efeae5',
+    'color-orange': '#D86F1B',
+    'color-drawer': '#F1F1F1',
+    'color-grey-text': '#8B8B8B'
 };
-// body
-colors['color-text-base'] = colors['color-main-graphite'];
-colors['color-text-headline'] = colors['color-main-black'];
+
 export default colors;
