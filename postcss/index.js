@@ -17,8 +17,11 @@ var processors = [
 		plugin:    require('./mixins'),
 		namespace: 'mixins',
 		defaults:  {}
-	},
-	{
+	}, {
+        plugin:    require('postcss-url'),
+        namespace: 'url',
+        defaults:  {}
+    }, {
 		plugin:    require('./vars'),
 		namespace: 'variables',
 		defaults:  {}

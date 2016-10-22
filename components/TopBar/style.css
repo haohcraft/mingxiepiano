@@ -8,16 +8,17 @@
             width: 160px;
             text-align: center;
             line-height: 75px;
+            color: $color-inactive;
+            
             &.Home {
-                    width: 75px;
-                    height: 75px;
-                    background-color: #fafafa;
-                    border-radius: 50%;
-                    border: 1px solid #dbdbdb;
-                    box-sizing: border-box;
-                    overflow: hidden;
-                    position: relative;
-                    background: url('images/ming.jpg');
+                width: 75px;
+                height: 75px;
+                background-color: #fafafa;
+                border-radius: 50%;
+                box-sizing: border-box;
+                overflow: hidden;
+                position: relative;
+                background: url('images/ming.jpg');
             }
         }
     }
