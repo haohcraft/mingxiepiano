@@ -8,9 +8,6 @@
             width: 160px;
             text-align: center;
             line-height: 75px;
-            color: $color-inactive;
-            text-decoration: none;
-
             &.Home {
                     width: 75px;
                     height: 75px;

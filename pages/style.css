@@ -36,19 +36,8 @@ video {
 
 a {
   text-decoration: none;
-}
-
-p a,
-a,
-.text-link {
-  transition: $transition-default;
   color: $color-inactive;
-  text-decoration: none;
   &:hover {
-    color: $color-blue;
-  }
-
-  &:active {
     color: $color-blue;
   }
 }
