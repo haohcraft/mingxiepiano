@@ -1,0 +1,10 @@
+.Hero {
+    &-img {}
+    &-feature {
+        h5 {
+            color: $color-gold;
+        }
+        &-quote {}
+        &-link {}
+    }
+}

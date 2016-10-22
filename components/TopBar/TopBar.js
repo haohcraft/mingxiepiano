@@ -1,6 +1,6 @@
 import React from 'react';
 import Headroom from 'react-headroom';
-import Link from '../Link';
+import { Link } from 'react-router';
 import { menue } from './constants';
 
 const cn = 'TopBar';

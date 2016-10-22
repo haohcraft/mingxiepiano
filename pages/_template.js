@@ -1,8 +1,9 @@
 import React, { PropTypes } from 'react';
 import { Container } from 'react-responsive-grid';
 import { rhythm } from '../utils/typography';
-
 import { TopBar } from '../components';
+import './base.css';
+
 const tml = (props) => (
     <div>
         <TopBar />
