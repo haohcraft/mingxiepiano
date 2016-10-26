@@ -10,9 +10,11 @@ const Hero = ({ cn = 'Hero', ...props }) => (
         <div className={`${cn}-feature`}>
             <h5>The Latest</h5>
             <hr></hr>
-            <h2 className={`${cn}-feature-quote`}>Ming is back</h2>
+            <h2 className={`${cn}-feature-quote`}>
+                Ming won the 1st prize of the 7th International Piano Competition Panama City
+            </h2>
             <h5 className={`${cn}-feature-link`}>
-                <Arrow className="yellow">Read More</Arrow>
+                {false && <Arrow className="yellow">Read More</Arrow>}
             </h5>
         </div>
     </div>

@@ -7,7 +7,11 @@
     &-feature {
         width: 45%;
         padding: 50px;
-        background: $color-blue;    
+        background: $color-blue;
+        h2 {
+            font-size: 40px;
+            line-height: 1.2;
+        }  
         h5 {
             color: $color-gold;
             text-transform: uppercase;

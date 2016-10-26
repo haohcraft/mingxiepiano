@@ -12,7 +12,7 @@ const Section = ({ cn = 'Section', ...props }) => (
             {props.children}
         </div>
         <div className={`${cn}-footer`}>
-            <Arrow className="arrow">view all</Arrow>
+            {false && <Arrow className="arrow">view all</Arrow>}
         </div>
     </div>
 );
