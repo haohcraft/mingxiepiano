@@ -1,5 +1,4 @@
 import React, { PropTypes } from 'react';
-import { Container } from 'react-responsive-grid';
 import './md.css';
 
 const md = (props) => {
