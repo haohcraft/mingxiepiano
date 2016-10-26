@@ -1,7 +1,7 @@
 import React from 'react';
 import Headroom from 'react-headroom';
 import { Link } from 'react-router';
-import { menue } from './constants';
+import { menu } from './constants';
 
 const cn = 'TopBar';
 const TopBar = () => (
@@ -9,7 +9,7 @@ const TopBar = () => (
         <div className={cn}>
             <div className={`${cn}-container`}>
                 {
-                    menue.map((p) => {
+                    menu.map((p) => {
                         if (p.name === 'Home') {
                             return <Link
                                 key={p.id}

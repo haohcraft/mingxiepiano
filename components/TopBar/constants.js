@@ -1,4 +1,4 @@
-export const menue = [
+export const menu = [
     {
         id: 0,
         name: 'News',

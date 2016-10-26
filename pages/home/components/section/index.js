@@ -5,7 +5,7 @@ import './style.css';
 const Section = ({ cn = 'Section', ...props }) => (
     <div className={cn}>
         <div className={`${cn}-head`}>
-            <h2 className={`${cn}-head-title`}>{props.title}</h2>
+            <h3 className={`${cn}-head-title`}>{props.title}</h3>
             <hr></hr>
         </div>
         <div className={`${cn}-content`}>

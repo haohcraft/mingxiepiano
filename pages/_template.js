@@ -1,7 +1,7 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import { Container } from 'react-responsive-grid';
 import { rhythm } from '../utils/typography';
-import { TopBar } from '../components';
+import { TopBar, Footer } from '../components';
 import './base.css';
 
 const tml = (props) => (
@@ -15,10 +15,9 @@ const tml = (props) => (
             }}
         >
             {props.children}
+            <Footer />
         </Container>
+
     </div>
 );
-tml.propTypes = {
-    children: PropTypes.any
-};
 export default tml;
