@@ -8,14 +8,13 @@ const Section = ({ cn = 'Section', ...props }) => (
             <hr></hr>
         </div>
         <div className={`${cn}-content`}>
-            {props.contentEl}
+            {props.children}
         </div>
     </div>
 );
 Section.propTypes = {
     cn: PropTypes.string,
-    title: PropTypes.string,
-    contentEl: PropTypes.element
+    title: PropTypes.string
 };
 
 export default Section;

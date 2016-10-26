@@ -1,6 +1,6 @@
 import React, { PropTypes, Component } from 'react';
 import cx from 'classnames';
-import { Hero } from './components';
+import { Hero, Section, Calendar } from './components';
 
 export default class HomePage extends Component {
     static propTypes = {
@@ -14,8 +14,12 @@ export default class HomePage extends Component {
     }
     render() {
         const cn = cx(this.cn, '');
+
         return <div className={cn}>
             <Hero imgUrl={require('./images/hero.jpg')}/>
+            <Section title='calendar'>
+                <Calendar />
+            </Section>
         </div>;
     }
 }

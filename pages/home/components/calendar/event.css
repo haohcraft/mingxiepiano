@@ -1,0 +1,31 @@
+.CalendarEvent {
+    transition: color 0.1s linear;
+    &-info {
+        text-align: center;
+        width: 200px;
+        h1 {
+            font-weight: 900;
+        }
+        &-date {
+            font-weight: 700;
+        }
+        &-day, &-date {
+            text-transform: uppercase;
+        }
+        &-program {
+            font-size: 14px;
+        }
+    }
+    &:hover {
+        cursor: pointer;
+        .CalendarEvent-info {
+            background: $color-perfHover;
+            * {
+                color: $color-red;
+            }
+        }
+    }
+    h6 {
+        margin-bottom: 5px;
+    }
+}

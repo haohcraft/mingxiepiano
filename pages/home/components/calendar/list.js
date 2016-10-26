@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react';
 import moment from 'moment';
 import Event from './event';
+import './list.css';
 
 const EVENTS = [
     {
@@ -33,12 +34,12 @@ const DATE_FORMAT = 'MM/DD/YYYY';
 const CalendarList = ({ cn = 'CalendarList', events = EVENTS }) => {
     const sorted = events.sort((a, b) => (
         moment(a.date, DATE_FORMAT).toDate().getTime()
-            >
+            <
         moment(b.date, DATE_FORMAT).toDate().getTime()
     ));
     return <div className={cn}>
         {
-            sorted.forEach((e) => {
+            sorted.map((e, k) => {
                 const { date, ...rest } = e;
                 const dateMoment = moment(date, DATE_FORMAT);
                 const p = {
@@ -47,7 +48,7 @@ const CalendarList = ({ cn = 'CalendarList', events = EVENTS }) => {
                     date: dateMoment.format('MMM YYYY'),
                     day: dateMoment.format('ddd')
                 };
-                return <Event {...p} />;
+                return <Event key={k} {...p} />;
             })
         }
     </div>;

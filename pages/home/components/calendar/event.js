@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react';
+import './event.css';
 
-const Event = ({ cn = 'Event', ...props }) => (
+const CalendarEvent = ({ cn = 'CalendarEvent', ...props }) => (
     <div className={cn}>
         <div className={`${cn}-info`}>
             <h1>{props.dateDay}</h1>
@@ -12,16 +13,21 @@ const Event = ({ cn = 'Event', ...props }) => (
                 props.hallNanme &&
                     <p className={`${cn}-info-hallNanme`}>{props.hallNanme}</p>
             }
+            {
+                props.program &&
+                    <p className={`${cn}-info-program`}>{props.program}</p>
+            }
         </div>
     </div>
 );
-Event.propTypes = {
+CalendarEvent.propTypes = {
     cn: PropTypes.string,
     dateDay: PropTypes.number.isRequired,
     date: PropTypes.string.isRequired,
     day: PropTypes.string.isRequired,
     city: PropTypes.string.isRequired,
-    hallNanme: PropTypes.string
+    hallNanme: PropTypes.string,
+    program: PropTypes.string
 };
 
-export default Event;
+export default CalendarEvent;
