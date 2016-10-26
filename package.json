@@ -34,6 +34,7 @@
     "eslint-plugin-react": "5.2.2",
     "extended-define-webpack-plugin": "^0.1.2",
     "gh-pages": "^0.11.0",
+    "moment": "^2.15.2",
     "postcss": "^5.2.4",
     "postcss-advanced-variables": "^1.2.2",
     "postcss-atroot": "^0.1.3",

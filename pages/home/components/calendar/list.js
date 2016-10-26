@@ -1,11 +1,12 @@
 import React, { PropTypes } from 'react';
-import moment from './moment';
+import moment from 'moment';
+import Event from './event';
 
 const EVENTS = [
     {
         date: '10/07/2016',
         hallName: 'paul recital hall',
-        city: 'nyc',
+        city: 'NYC',
         orchestra: 'solo recital',
         conductor: '',
         program: 'Works by Bach, Beethoven, Albeniz, Ravel, Ginastera',
@@ -29,12 +30,26 @@ const EVENTS = [
     }
 ];
 const DATE_FORMAT = 'MM/DD/YYYY';
-const CalendarList = ({ cn = 'CalendarList', events = EVENTS, ...props }) => {
-    const sorted = events.sort((a , b) => (
-        moment(a.date, DATE_FORMAT).toDate().getTime() > moment(b.date, DATE_FORMAT).toDate().getTime()
+const CalendarList = ({ cn = 'CalendarList', events = EVENTS }) => {
+    const sorted = events.sort((a, b) => (
+        moment(a.date, DATE_FORMAT).toDate().getTime()
+            >
+        moment(b.date, DATE_FORMAT).toDate().getTime()
     ));
     return <div className={cn}>
-
+        {
+            sorted.forEach((e) => {
+                const { date, ...rest } = e;
+                const dateMoment = moment(date, DATE_FORMAT);
+                const p = {
+                    ...rest,
+                    dateDay: dateMoment.date(),
+                    date: dateMoment.format('MMM YYYY'),
+                    day: dateMoment.format('ddd')
+                };
+                return <Event {...p} />;
+            })
+        }
     </div>;
 };
 CalendarList.propTypes = {
