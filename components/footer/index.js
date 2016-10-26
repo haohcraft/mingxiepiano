@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import { Link } from 'react-router';
 import TwitterIcon from 'react-icons/lib/fa/twitter';
 import InstagramIcon from 'react-icons/lib/fa/instagram';
 import FacebookIcon from 'react-icons/lib/fa/facebook';
@@ -35,6 +36,8 @@ const Footer = ({ cn = 'Footer' }) => (
                 </a>;
             })
         }
+        |<Link to='/'>Home</Link>
+        |<Link to='/about/'>About</Link>
     </div>
 );
 Footer.propTypes = {
