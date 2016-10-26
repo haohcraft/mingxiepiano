@@ -17,7 +17,7 @@ export default class HomePage extends Component {
 
         return <div className={cn}>
             <Hero imgUrl={require('./images/hero.jpg')}/>
-            <Section title='calendar'>
+            <Section title='performances'>
                 <Calendar />
             </Section>
         </div>;

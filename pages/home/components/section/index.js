@@ -1,14 +1,18 @@
 import React, { PropTypes } from 'react';
+import { Arrow } from 'components'; // eslint-disable-line 
 import './style.css';
 
 const Section = ({ cn = 'Section', ...props }) => (
     <div className={cn}>
         <div className={`${cn}-head`}>
-            <h6>{props.title}</h6>
+            <h2 className={`${cn}-head-title`}>{props.title}</h2>
             <hr></hr>
         </div>
         <div className={`${cn}-content`}>
             {props.children}
+        </div>
+        <div className={`${cn}-footer`}>
+            <Arrow className="arrow">view all</Arrow>
         </div>
     </div>
 );

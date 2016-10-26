@@ -1,3 +1,25 @@
 .Section {
+    margin-top: 20px;
+    padding-bottom: 20px;
     background: $color-light-grey;
+    &-head {
+        max-width: 300px;
+        padding: 0px 30px;
+        &-title {
+            text-transform: uppercase;
+            padding: 20px 0px;
+        }
+        hr {
+            border-bottom: 2px solid $color-blue;
+        }
+    }
+    &-footer {
+        text-align: right;
+        margin-right: 5%;
+        .arrow {
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $color-red;
+        }
+    }
 }

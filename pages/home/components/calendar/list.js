@@ -32,6 +32,7 @@ const EVENTS = [
 ];
 const DATE_FORMAT = 'MM/DD/YYYY';
 const CalendarList = ({ cn = 'CalendarList', events = EVENTS }) => {
+    // TODO: move this sorting logic to sever
     const sorted = events.sort((a, b) => (
         moment(a.date, DATE_FORMAT).toDate().getTime()
             <
