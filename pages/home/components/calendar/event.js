@@ -1,8 +1,8 @@
 import React, { PropTypes } from 'react';
 import './event.css';
 
-const CalendarEvent = ({ cn = 'CalendarEvent', ...props }) => (
-    <div className={cn}>
+const CalendarEvent = ({ cn = 'CalendarEvent', className = '', ...props }) => (
+    <div className={`${cn} ${className}`}>
         <div className={`${cn}-info`}>
             <h1>{props.dateDay}</h1>
             <h6 className={`${cn}-info-date`}>{props.date}</h6>
@@ -22,6 +22,7 @@ const CalendarEvent = ({ cn = 'CalendarEvent', ...props }) => (
 );
 CalendarEvent.propTypes = {
     cn: PropTypes.string,
+    className: PropTypes.string,
     dateDay: PropTypes.number.isRequired,
     date: PropTypes.string.isRequired,
     day: PropTypes.string.isRequired,

@@ -38,7 +38,7 @@ const CalendarList = ({ cn = 'CalendarList', events = EVENTS }) => {
             <
         moment(b.date, DATE_FORMAT).toDate().getTime()
     ));
-    return <div className={cn}>
+    return <div className={`${cn} row`}>
         {
             sorted.map((e, k) => {
                 const { date, ...rest } = e;
@@ -49,7 +49,9 @@ const CalendarList = ({ cn = 'CalendarList', events = EVENTS }) => {
                     date: dateMoment.format('MMM YYYY'),
                     day: dateMoment.format('ddd')
                 };
-                return <Event key={k} {...p} />;
+                return <Event
+                    className={`col-md-${Math.floor(12 / sorted.length)}`}
+                    key={k} {...p} />;
             })
         }
     </div>;

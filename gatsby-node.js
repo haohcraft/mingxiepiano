@@ -1,6 +1,7 @@
 import cPostcss from './postcss';
 /*eslint-disable*/
 exports.modifyWebpackConfig = function(config, env) {
+
   config.merge({
     postcss (wp) {
       return [

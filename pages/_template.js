@@ -1,14 +1,16 @@
 import React from 'react';
-import { Container } from 'react-responsive-grid';
 import { rhythm } from '../utils/typography';
 import { TopBar, Footer } from '../components';
+
+import 'flexboxgrid';
 import './base.css';
 
 const tml = (props) => (
     <div>
         <TopBar />
-        <Container
+        <div
             style={{
+                margin: '0 auto',
                 maxWidth: '65em',
                 padding: `${rhythm(1)} ${rhythm(3 / 4)}`,
                 paddingTop: 90
@@ -16,7 +18,7 @@ const tml = (props) => (
         >
             {props.children}
             <Footer />
-        </Container>
+        </div>
 
     </div>
 );

@@ -1,8 +1,11 @@
 .CalendarEvent {
     transition: color 0.1s linear;
+    text-align: center;
+    margin: 0 auto;
     &-info {
-        text-align: center;
-        width: 200px;
+        padding: 5px 0px;
+        max-width: 200px;
+        margin: 0 auto;
         h1 {
             font-weight: 900;
         }
